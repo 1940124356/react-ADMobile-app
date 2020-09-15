@@ -1,0 +1,3 @@
+//home
+export const GET_HOME_SLIDESHOW = 'GET_HOME_SLIDESHOW'
+export const GET_HOME_CATITEMS = 'GET_HOME_CATITEMS'
