@@ -36,6 +36,8 @@ export function fetchgoodlist(params){
     })
 }
 
+
+
 export default {
     fetchImg,
     fetchCatItems,

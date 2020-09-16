@@ -1,0 +1,62 @@
+.good-goodlist {
+  position: relative;
+  height: 100%;
+}
+
+.good-goodlist .good_list_cat {
+  position: absolute;
+  top: 2.933333rem;
+  left: 0;
+  bottom: 1.333333rem;
+  overflow: auto;
+  width: 2.346667rem;
+  background: #e9e7e7;
+}
+
+.good-goodlist .good_list_cat .on {
+  background: #fff;
+  color: red;
+}
+
+.good-goodlist .good_list_cat > div {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.good-goodlist .good_children {
+  position: absolute;
+  top: 2.933333rem;
+  right: 0;
+  bottom: 1.333333rem;
+  overflow: auto;
+  width: 7.6533rem;
+}
+
+.good-goodlist .good_children > div h5 {
+  height: 30px;
+  margin: 0;
+}
+
+.good-goodlist .good_children > div > div {
+  overflow: hidden;
+}
+
+.good-goodlist .good_children > div > div > div {
+  box-sizing: border-box;
+  margin: 5px;
+  width: 85px;
+  height: 85px;
+  float: left;
+  background: brown;
+  border-radius: 10px;
+}
+
+.good-goodlist .good_children > div > div > div > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
