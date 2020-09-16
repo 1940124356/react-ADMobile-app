@@ -27,10 +27,10 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Provider store={store}>
-        <Switch>
-          {this.createRoutes()}
-          <Redirect from="/*" to="/home"></Redirect>
-        </Switch>
+          <Switch>
+            {this.createRoutes()}
+            <Redirect from="/*" to="/home"></Redirect>
+          </Switch>
         </Provider>
       </HashRouter>
     );

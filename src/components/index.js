@@ -1,7 +1,7 @@
 import KBTabBar from './layout/KBTabBar'
-import Layout from './layout/Layout'
+import KBHeader from './layout/KBHeader'
 
 export  {
     KBTabBar,
-    Layout
+    KBHeader
 }

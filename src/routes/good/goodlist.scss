@@ -1,0 +1,19 @@
+.good-goodlist{
+    position: relative;
+    height: 100%;
+    .good_list_cat{
+        position: absolute;
+        top: 2.933333rem;left: 0;bottom: 1.333333rem;
+        overflow: hidden;
+        width: 2.346667rem;
+        background: rgb(200, 199, 199);
+        &>div{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+    }
+}

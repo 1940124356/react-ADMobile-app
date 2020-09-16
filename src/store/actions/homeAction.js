@@ -1,7 +1,10 @@
 //引入
-import { GET_HOME_SLIDESHOW,GET_HOME_CATITEMS }from '../actionType'
+import { 
+    GET_HOME_SLIDESHOW,
+    GET_HOME_CATITEMS,
+    GET_HOME_FLOORDATA }from '../actionType'
 
-import { fetchImg,fetchCatItems } from '@/utils/api'
+import { fetchImg,fetchCatItems,fetchfloordata } from '@/utils/api'
 
 //调用轮播图的接口
 export function getHomeSlideshow(params){
@@ -34,6 +37,23 @@ export function getCatItems(params){
         }).catch(err=>{
             dispatch({
                 type:GET_HOME_CATITEMS,
+                payload:[]
+            })
+        })
+    }
+}
+
+//专区
+export function getfloordata(params){
+    return function(dispatch){
+        fetchfloordata(params).then(res=>{
+            dispatch({
+                type:GET_HOME_FLOORDATA,
+                payload:res.message
+            })
+        }).catch(err=>{
+            dispatch({
+                type:GET_HOME_FLOORDATA,
                 payload:[]
             })
         })

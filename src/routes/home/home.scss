@@ -1,60 +1,11 @@
 .kb-home{
     overflow: hidden;
 }
-//头部
-.home-title{
-    width: 100%;
-    height: 1.333334rem;
-    background: rgb(233,67,79);
-    text-align: center;
-    line-height: 1.333334rem;
-    font-size: 0.426667rem;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    
-    .title-but{
-        position: absolute;
-        width: 2rem;
-        height: 0.8rem;
-        top: 0.346667rem;right: 0.586667rem;
-        background: rgb(198,58,70);
-        border-radius: 0.533333rem;
-        display: flex;
-        justify-content: space-between;
-        span{
-            width: 1rem;
-            height: 100%;
-            text-align: center;
-            line-height: 0.8rem;
-            &:nth-child(1){
-                border-right: 0.013333rem solid #333;
-            }
-        }
-    }
-}
-//搜索框
-.search{
-    width: 100%;
-    height: 1.333333rem;
-    margin-top: 1.333334rem;
-    background: red;
-    padding-top: 0.266667rem;
-    .search-box{
-        width: 80%;
-        height: 1.2rem;
-        background: #fff;
-        font-size: 0.48rem;
-        color: gray;
-        margin: 0 auto;
-        border-radius: 0.133333rem;
-        text-align: center;
-        line-height: 1.2rem;
-    }
-}
-//轮播图
 
+//轮播图
+.slideshow{
+    margin-top: 2.666667rem;
+}
 //分类
 .classify{
     width: 100%;
@@ -69,30 +20,50 @@
         }
     }
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight:normal; /*清除加粗*/
+  }
 //图片列表
 .imgslist{
-    &>h1{width: 100%;height: 2rem;}
+    &>div{
+        &>h1{
+            width: 100%;height: 1rem;
+            &>img{
+                display: block;
+                height: 1rem;
+            }
+        }
+    }
     margin-bottom: 1.333334rem;
     .prefecture{
         display: flex;
         &>div{
             flex-wrap:wrap;
-            margin: 5px;
+            margin: 2px;
             &:nth-child(1){
-                width: 115px;
+                width: 110px;
                 height: 230px;
-                background: red;
+                &>img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
             &:nth-child(2){
                 flex: 1;
                 height: 230px;
-                background: green;
                 display: flex;
                 &>div:nth-child(1),&>div:nth-child(2),&>div:nth-child(3),&>div:nth-child(4){
                     background: pink;
-                    width: 100px;
-                    height: 100px;
+                    width: 122px;
+                    height: 110px;
+                    margin: 3px;
+                    &>img{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
                 }
             }
         }

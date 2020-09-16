@@ -18,7 +18,27 @@ export function fetchCatItems(params){
     })
 }
 
+//获取专区图片
+export function fetchfloordata(params){
+    return axios({
+        url:'/home/floordata',
+        methods:'GET',
+        params
+    })
+}
+
+//获取good商品列表分类
+export function fetchgoodlist(params){
+    return axios({
+        url:'/categories',
+        methods:'GET',
+        params
+    })
+}
+
 export default {
     fetchImg,
-    fetchCatItems
+    fetchCatItems,
+    fetchfloordata,
+    fetchgoodlist
 }
